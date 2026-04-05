@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propuesta de Sistema | La Casa del Volován</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="topbar" role="banner">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <img class="brand__logo" src="../logo.png" alt="La Casa del Volován" />
+          <div class="brand__meta">
+            <div class="brand__title">Propuesta de Sistema</div>
+            <div class="brand__subtitle">Operación multiestado con trazabilidad y control</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Secciones">
+          <a class="nav__link" href="#resumen">Resumen</a>
+          <a class="nav__link" href="#alcance">Alcance</a>
+          <a class="nav__link" href="#fases">Fases</a>
+          <a class="nav__link" href="#paquetes">Paquetes</a>
+          <a class="nav__link" href="#entregables">Entregables</a>
+          <a class="nav__link" href="#requerimientos">Requerimientos</a>
+        </nav>
+
+        <div class="actions">
+          <button class="btn" id="btnPrint" type="button">Imprimir / PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido" class="main" role="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <div class="badge">Propuesta por fases</div>
+            <h1>Sistema integral para operar, vender y escalar sin punto de venta</h1>
+            <p class="lead">
+              Una plataforma multi-sucursal/multi-franquicia para centralizar pedidos, inventarios y producción por
+              sucursal, y concentrar ventas de Uber/Didi/Rappi asociadas al punto de venta.
+            </p>
+
+            <div class="hero__stats" role="list">
+              <div class="stat" role="listitem">
+                <div class="stat__kpi">1</div>
+                <div class="stat__label">Multi-sucursal + roles</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__kpi">2</div>
+                <div class="stat__label">POS + plataformas (Uber/Didi/Rappi)</div>
+              </div>
+              <div class="stat" role="listitem">
+                <div class="stat__kpi">3</div>
+                <div class="stat__label">Control: inventario y producción por sede</div>
+              </div>
+            </div>
+
+            <div class="hero__cta">
+              <a class="btn" href="#requerimientos">Ver requerimientos</a>
+              <a class="btn btn--ghost" href="#fases">Ver plan por fases</a>
+            </div>
+          </div>
+
+          <aside class="card card--hero" aria-label="Resumen ejecutivo">
+            <h2>Resumen ejecutivo</h2>
+            <ul class="check">
+              <li>Control por sucursal/franquicia: inventario, producción, responsables y reportes.</li>
+              <li>Unificar visibilidad multiestado sin centralizar proveedores ni inventarios.</li>
+              <li>Concentrar pedidos de Uber/Didi/Rappi y asociarlos al POS/sucursal.</li>
+              <li>Conciliación por plataforma: ventas, comisiones, cancelaciones y ajustes.</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <div class="mini">
+              <div class="mini__label">Siguiente paso sugerido</div>
+              <div class="mini__value">Reunión de 20 min (operación + objetivos) para cotización exacta</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="resumen" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Contexto y oportunidad</h2>
+            <p>
+              Operación distribuida (Veracruz, CDMX, Tabasco) con producción propia por sucursal/franquicia: el objetivo
+              es estandarizar procesos y obtener visibilidad en tiempo real, sin forzar inventarios centralizados.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Retos actuales (comunes)</h3>
+              <ul class="bullets">
+                <li>Seguimiento limitado de pedidos, producción y entregas entre estados.</li>
+                <li>Inventarios y proveedores por sucursal: faltantes, mermas y ajustes sin trazabilidad.</li>
+                <li>Procesos manuales (WhatsApp/Excel) que escalan mal.</li>
+                <li>Pedidos de plataformas (Uber/Didi/Rappi) sin asociación clara al POS/sucursal para control y conciliación.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Objetivo del sistema</h3>
+              <ul class="bullets">
+                <li>Operación multi-sucursal: cada sucursal con su inventario, producción y responsables.</li>
+                <li>Medir KPIs clave (ventas, rotación, cumplimiento, merma).</li>
+                <li>Controlar inventario e insumos con trazabilidad.</li>
+                <li>Concentrar pedidos de Uber/Didi/Rappi y asignarlos a la sucursal/POS correcto.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="alcance" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Alcance propuesto (módulos)</h2>
+            <p>
+              Un ecosistema modular (web + móvil opcional), implementado por fases para asegurar adopción y resultados
+              rápidos.
+            </p>
+          </header>
+
+          <div class="grid-3">
+            <article class="card">
+              <h3>Backoffice (Administración)</h3>
+              <ul class="bullets">
+                <li>Catálogo de productos, variantes y combos.</li>
+                <li>Precios por zona/canal (mayoreo, menudeo, distribuidores).</li>
+                <li>Usuarios y roles (gerencia, almacén, producción, reparto).</li>
+                <li>Sucursales/franquicias: configuración por sede (catálogo, horarios, zonas, responsables).</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Pedidos (sin punto de venta)</h3>
+              <ul class="bullets">
+                <li>B2B: portal para clientes, listas de precio por cliente.</li>
+                <li>Pedidos recurrentes y programación.</li>
+                <li>Crédito / límites / estatus de cobro (si aplica).</li>
+                <li>B2C opcional: tienda en línea + pagos + asignación por zona a sucursal.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Producción e inventarios</h3>
+              <ul class="bullets">
+                <li>Inventario de insumos y producto terminado por sucursal.</li>
+                <li>Órdenes de producción por sucursal basadas en demanda.</li>
+                <li>Recetas (BOM), consumos automáticos, mermas.</li>
+                <li>Lotes/caducidades (si aplica).</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Logística / entrega</h3>
+              <ul class="bullets">
+                <li>Rutas por zona/estado.</li>
+                <li>Estados del pedido: preparado, en ruta, entregado.</li>
+                <li>Evidencia de entrega (foto/firma, opcional).</li>
+                <li>Reportes por repartidor/zona.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Plataformas (Uber/Didi/Rappi)</h3>
+              <ul class="bullets">
+                <li>Concentrador de pedidos de plataformas.</li>
+                <li>Asociación automática de pedido a sucursal/POS.</li>
+                <li>Mapeo de menú por sucursal (SKU/plataforma).</li>
+                <li>Conciliación: ventas, comisiones, cancelaciones y ajustes.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Reportes y control</h3>
+              <ul class="bullets">
+                <li>Ventas por estado/zona/canal.</li>
+                <li>Rotación por producto y top sellers.</li>
+                <li>Cumplimiento de entregas y tiempos.</li>
+                <li>Alertas: stock mínimo, merma alta, atrasos.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Integraciones (según alcance)</h3>
+              <ul class="bullets">
+                <li>Notificaciones (WhatsApp / email).</li>
+                <li>Facturación (si usan PAC / sistema actual).</li>
+                <li>Pagos (Stripe / MercadoPago, etc.).</li>
+                <li>Google Maps para zonas y rutas.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="fases" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Plan de implementación (por fases)</h2>
+            <p>Implementación gradual para asegurar adopción, resultados rápidos y escalabilidad.</p>
+          </header>
+
+          <div class="timeline">
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 1 (4–6 semanas)</div>
+                <div class="pill">Multi-sucursal base</div>
+              </div>
+              <ul class="bullets">
+                <li>Alta de sucursales/franquicias, roles y permisos.</li>
+                <li>Catálogo y configuración por sede (horarios / zonas).</li>
+                <li>Inventario básico por sucursal + reportes por sede.</li>
+              </ul>
+              <div class="outcome">Resultado: control por sede y visibilidad multiestado.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 2 (4–8 semanas)</div>
+                <div class="pill">Producción + KPIs</div>
+              </div>
+              <ul class="bullets">
+                <li>Órdenes de producción por sucursal, recetas/consumos.</li>
+                <li>Mermas, ajustes y trazabilidad por responsable.</li>
+                <li>Dashboard ejecutivo por sede/estado (KPIs).</li>
+              </ul>
+              <div class="outcome">Resultado: control operativo y métricas consistentes por sucursal.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 3 (opcional)</div>
+                <div class="pill">Plataformas + POS + conciliación</div>
+              </div>
+              <ul class="bullets">
+                <li>Asociación de pedidos Uber/Didi/Rappi al POS/sucursal.</li>
+                <li>Mapeo de menú por sede (SKU/plataforma) y disponibilidad.</li>
+                <li>Conciliación por plataforma y reportes de comisiones.</li>
+              </ul>
+              <div class="outcome">Resultado: control total de ventas por plataforma y cortes por sede.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="paquetes" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Propuesta comercial (paquetes)</h2>
+            <p>Paquetes sugeridos para alinear alcance, tiempos y presupuesto. Ajustables a su operación.</p>
+          </header>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="pill pill--soft">Starter</div>
+              <h3>Multi-sucursal base</h3>
+              <ul class="bullets">
+                <li>Catálogo y usuarios/roles.</li>
+                <li>Alta de sucursales/franquicias (inventario y operación por sede).</li>
+                <li>Pedidos internos + reportes esenciales por sucursal.</li>
+                <li>Inventario básico por sucursal.</li>
+              </ul>
+              <div class="outcome">Ideal para: ordenar operación por sede y tener visibilidad por estado.</div>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Pro</div>
+              <h3>Producción y control por sucursal</h3>
+              <ul class="bullets">
+                <li>Órdenes de producción y recetas/consumos.</li>
+                <li>Mermas y trazabilidad.</li>
+                <li>Rutas y evidencias de entrega (opcional).</li>
+                <li>Dashboard de KPIs.</li>
+              </ul>
+              <div class="outcome">Ideal para: controlar rotación, merma y cumplimiento multiestado.</div>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Enterprise</div>
+              <h3>Plataformas + POS + conciliación</h3>
+              <ul class="bullets">
+                <li>Asociación de pedidos Uber/Didi/Rappi al POS/sucursal.</li>
+                <li>Mapeo de menú por sucursal (SKU/plataforma) y stock.</li>
+                <li>Conciliación por plataforma: comisiones, ajustes, cancelaciones.</li>
+                <li>Integraciones (facturación/notificaciones) + automatizaciones.</li>
+              </ul>
+              <div class="outcome">Ideal para: control total de ventas por plataforma y operación por sede.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="entregables" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Entregables</h2>
+            <p>Lo que se entrega para que el sistema opere y el equipo lo adopte.</p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card">
+              <ul class="check">
+                <li>Sistema web administrativo (y app móvil si se define).</li>
+                <li>Base de datos centralizada + respaldos.</li>
+                <li>Roles y permisos por perfil de usuario.</li>
+                <li>Flujos de pedidos, producción, inventario y entrega.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <ul class="check">
+                <li>Manuales rápidos por rol (operación).</li>
+                <li>Capacitación inicial (remota o presencial).</li>
+                <li>Soporte post-salida (SLA por definir).</li>
+                <li>Roadmap de mejoras y evolutivos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="requerimientos" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Información necesaria para cotizar exacto</h2>
+            <p>Con estas respuestas se arma alcance, cronograma final y propuesta económica.</p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3>Preguntas clave (5)</h3>
+              <ol class="ol">
+                <li>¿Cuántas sucursales/franquicias operan hoy (Veracruz/CDMX/Tabasco) y cuántas planean abrir?</li>
+                <li>¿Cada sucursal produce todo, o hay productos centralizados por región?</li>
+                <li>¿Qué POS usan hoy (si existe) y cómo hacen cortes/caja por sucursal?</li>
+                <li>¿Qué plataformas usan por sucursal (Uber/Didi/Rappi) y cómo reciben esos pedidos?</li>
+                <li>¿Qué prioridad es #1: inventarios/merma, producción, conciliación plataformas, o reportes ejecutivos?</li>
+              </ol>
+            </div>
+
+            <div class="card">
+              <h3>Alcance y costos</h3>
+              <ul class="bullets">
+                <li>Definimos paquete objetivo (Starter/Pro/Enterprise) y alcance por sucursal.</li>
+                <li>Se define estrategia de integración con plataformas (directa o por agregador) y mapeo de menú.</li>
+                <li>Cronograma por fases con entregables medibles.</li>
+                <li>Modelo comercial: implementación + mensualidad, o mensualidad (SaaS) + setup.</li>
+              </ul>
+              <div class="outcome">Siguiente paso: sesión de levantamiento para cotización formal.</div>
+            </div>
+          </div>
+
+          <div class="cta card">
+            <div>
+              <h3>Modelo comercial (a definir en reunión)</h3>
+              <div class="grid-2 grid-2--compact">
+                <div>
+                  <div class="pill pill--soft">Opción A</div>
+                  <div class="cta__title">Implementación + mensualidad</div>
+                  <div class="muted">Pago único por arranque + mensualidad por hosting/soporte/mejoras menores.</div>
+                </div>
+                <div>
+                  <div class="pill pill--soft">Opción B</div>
+                  <div class="cta__title">Mensualidad (SaaS) + setup</div>
+                  <div class="muted">Setup inicial menor + mensualidad por usuarios/sucursales/volumen.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cta__actions">
+              <button class="btn" id="btnPrint2" type="button">Imprimir / PDF</button>
+              <a class="btn btn--ghost" href="#resumen">Volver arriba</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">La Casa del Volován — Propuesta de Sistema</div>
+          <div class="muted">Documento de presentación (borrador). Ajustable a operación real y prioridades.</div>
+        </div>
+        <div class="footer__right">
+          <div class="muted">Versión: <span id="versionTag">v1</span></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
