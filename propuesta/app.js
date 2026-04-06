@@ -10,6 +10,7 @@ function setActiveNav() {
   const sections = [
     "#resumen",
     "#alcance",
+    "#modelo-pos",
     "#fases",
     "#paquetes",
     "#entregables",

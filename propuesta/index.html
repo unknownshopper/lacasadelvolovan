@@ -67,6 +67,44 @@
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
 
+    <svg class="visually-hidden" aria-hidden="true" focusable="false">
+      <symbol id="i-store" viewBox="0 0 24 24">
+        <path d="M4 7V4h16v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M3 7h18l-1.5 4.5a3.5 3.5 0 0 1-6.7.2 3.5 3.5 0 0 1-6.6-.2A3.5 3.5 0 0 1 4.5 11.5L3 7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M6 21V12.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M18 21V12.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M9 21v-6h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="i-box" viewBox="0 0 24 24">
+        <path d="M21 8.5 12 3 3 8.5 12 14l9-5.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M3 8.5V18l9 5 9-5V8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M12 14v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M19.4 15a8.4 8.4 0 0 0 .1-1l2-1.2-2-3.5-2.3.6a8.7 8.7 0 0 0-1.7-1l-.3-2.4H9.8L9.5 7a8.7 8.7 0 0 0-1.7 1l-2.3-.6-2 3.5L5.5 12a8.4 8.4 0 0 0 0 2l-2 1.2 2 3.5 2.3-.6c.5.4 1.1.7 1.7 1l.3 2.4h4.9l.3-2.4c.6-.3 1.2-.6 1.7-1l2.3.6 2-3.5-2-1.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="i-receipt" viewBox="0 0 24 24">
+        <path d="M7 3h10v18l-2-1-2 1-2-1-2 1-2-1-2 1V3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <path d="M3 7h12v10H3V7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M15 10h4l2 2v5h-6V10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+        <path d="M7.5 19.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M18.5 19.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path d="M4 19V5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M8 16v-5M12 16V8M16 16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 24 24">
+        <path d="M10 13a5 5 0 0 1 0-7l1-1a5 5 0 0 1 7 7l-1 1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        <path d="M14 11a5 5 0 0 1 0 7l-1 1a5 5 0 0 1-7-7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+    </svg>
+
     <header class="topbar" role="banner">
       <div class="container topbar__inner">
         <div class="brand">
@@ -80,6 +118,7 @@
         <nav class="nav" aria-label="Secciones">
           <a class="nav__link" href="#resumen">Resumen</a>
           <a class="nav__link" href="#alcance">Alcance</a>
+          <a class="nav__link" href="#modelo-pos">Modelo POS</a>
           <a class="nav__link" href="#fases">Fases</a>
           <a class="nav__link" href="#paquetes">Paquetes</a>
           <a class="nav__link" href="#entregables">Entregables</a>
@@ -189,7 +228,10 @@
 
           <div class="grid-3">
             <article class="card">
-              <h3>Backoffice (Administración)</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-gear" /></svg></span>
+                <h3>Backoffice (Administración)</h3>
+              </div>
               <ul class="bullets">
                 <li>Catálogo de productos, variantes y combos.</li>
                 <li>Precios por zona/canal (mayoreo, menudeo, distribuidores).</li>
@@ -199,7 +241,10 @@
             </article>
 
             <article class="card">
-              <h3>Pedidos (sin punto de venta)</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-receipt" /></svg></span>
+                <h3>Pedidos (sin punto de venta)</h3>
+              </div>
               <ul class="bullets">
                 <li>B2B: portal para clientes, listas de precio por cliente.</li>
                 <li>Pedidos recurrentes y programación.</li>
@@ -209,7 +254,10 @@
             </article>
 
             <article class="card">
-              <h3>Producción e inventarios</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-box" /></svg></span>
+                <h3>Producción e inventarios</h3>
+              </div>
               <ul class="bullets">
                 <li>Inventario de insumos y producto terminado por sucursal.</li>
                 <li>Órdenes de producción por sucursal basadas en demanda.</li>
@@ -219,7 +267,10 @@
             </article>
 
             <article class="card">
-              <h3>Logística / entrega</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-truck" /></svg></span>
+                <h3>Logística / entrega</h3>
+              </div>
               <ul class="bullets">
                 <li>Rutas por zona/estado.</li>
                 <li>Estados del pedido: preparado, en ruta, entregado.</li>
@@ -229,7 +280,10 @@
             </article>
 
             <article class="card">
-              <h3>Plataformas (Uber/Didi/Rappi)</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-link" /></svg></span>
+                <h3>Plataformas (Uber/Didi/Rappi)</h3>
+              </div>
               <ul class="bullets">
                 <li>Concentrador de pedidos de plataformas.</li>
                 <li>Asociación automática de pedido a sucursal/POS.</li>
@@ -239,7 +293,10 @@
             </article>
 
             <article class="card">
-              <h3>Reportes y control</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-chart" /></svg></span>
+                <h3>Reportes y control</h3>
+              </div>
               <ul class="bullets">
                 <li>Ventas por estado/zona/canal.</li>
                 <li>Rotación por producto y top sellers.</li>
@@ -249,7 +306,10 @@
             </article>
 
             <article class="card">
-              <h3>Integraciones (según alcance)</h3>
+              <div class="card__head">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-link" /></svg></span>
+                <h3>Integraciones (según alcance)</h3>
+              </div>
               <ul class="bullets">
                 <li>Notificaciones (WhatsApp / email).</li>
                 <li>Facturación (si usan PAC / sistema actual).</li>
@@ -257,6 +317,193 @@
                 <li>Google Maps para zonas y rutas.</li>
               </ul>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="modelo-pos" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Modelo POS: estándar vs propuesto</h2>
+            <p>
+              Comparativo visual para operar multi-sucursal con producción por sede y concentrar pedidos de plataformas
+              (Uber/Didi/Rappi) ligados al punto de venta.
+            </p>
+          </header>
+
+          <div class="compare">
+            <article class="card compare__card">
+              <div class="compare__badge compare__badge--limited" aria-label="Limitado">Limitado</div>
+              <div class="compare__title">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-receipt" /></svg></span>
+                <div>
+                  <div class="compare__kicker">Modelo 1</div>
+                  <h3>POS estándar (por sucursal, con integración limitada)</h3>
+                </div>
+              </div>
+
+              <div class="flow flow--funnel" aria-label="Flujo POS estándar">
+                <div class="flowStep">
+                  <div class="flowStep__label">Cliente</div>
+                  <div class="muted">Mostrador / llamada</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">POS sucursal</div>
+                  <div class="muted">Captura y cobro</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Cocina</div>
+                  <div class="muted">Producción</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Entrega</div>
+                  <div class="muted">Reparto / plataforma</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Control</div>
+                  <div class="muted">Conciliación manual</div>
+                </div>
+              </div>
+
+              <ul class="bullets compare__bullets">
+                <li>La visibilidad se fragmenta por sucursal y por canal.</li>
+                <li>Plataformas suelen quedar “por fuera” del POS o con procesos manuales.</li>
+                <li>Inventario/producción sin estandarización ni trazabilidad consistente.</li>
+              </ul>
+            </article>
+
+            <article class="card compare__card">
+              <div class="compare__badge compare__badge--recommended" aria-label="Recomendado">Recomendado</div>
+              <div class="compare__title">
+                <span class="iconWrap" aria-hidden="true"><svg class="icon"><use href="#i-link" /></svg></span>
+                <div>
+                  <div class="compare__kicker">Modelo 2</div>
+                  <h3>POS propuesto (operación por sede + concentrador de canales)</h3>
+                </div>
+              </div>
+
+              <div class="flow flow--funnel" aria-label="Flujo POS propuesto">
+                <div class="flowStep">
+                  <div class="flowStep__label">Canales</div>
+                  <div class="muted">Mostrador + Uber/Didi/Rappi</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Concentrador</div>
+                  <div class="muted">Unifica pedidos</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Enrutamiento</div>
+                  <div class="muted">Asigna a sucursal/POS</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Operación</div>
+                  <div class="muted">Producción + inventario</div>
+                </div>
+                <div class="flowStep">
+                  <div class="flowStep__label">Cierre</div>
+                  <div class="muted">KPIs + conciliación</div>
+                </div>
+              </div>
+
+              <ul class="bullets compare__bullets">
+                <li>Pedidos de plataformas asociados al POS/sucursal correcto (sin duplicar captura).</li>
+                <li>Inventario y producción por sede con trazabilidad y reglas estandarizadas.</li>
+                <li>Reportes por estado/sucursal y conciliación por plataforma (comisiones/ajustes).</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="compareMatrix card" aria-label="Diferencias clave entre modelos">
+            <div class="compareMatrix__head">
+              <div>
+                <h3>Diferencias clave (lo que cambia en la operación)</h3>
+                <div class="muted">Lectura rápida por criterio: limitación vs ventaja</div>
+              </div>
+              <div class="pill">Impacto operativo</div>
+            </div>
+
+            <div class="compareMatrix__grid" role="table">
+              <div class="cmRow cmRow--head" role="row">
+                <div class="cmCell" role="columnheader">Criterio</div>
+                <div class="cmCell" role="columnheader">Modelo 1</div>
+                <div class="cmCell" role="columnheader">Modelo 2</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Integración de plataformas (Uber/Didi/Rappi)</div>
+                <div class="cmCell" role="cell"><span class="sig sig--bad">✖</span> Captura/conciliación manual</div>
+                <div class="cmCell" role="cell"><span class="sig sig--good">✓</span> Pedidos unificados al POS</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Visibilidad multi-sucursal/multi-estado</div>
+                <div class="cmCell" role="cell"><span class="sig sig--warn">⚠</span> Fragmentada por sede/canal</div>
+                <div class="cmCell" role="cell"><span class="sig sig--good">✓</span> Dashboard consolidado</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Inventario y producción por sede</div>
+                <div class="cmCell" role="cell"><span class="sig sig--warn">⚠</span> Sin reglas estandarizadas</div>
+                <div class="cmCell" role="cell"><span class="sig sig--good">✓</span> Trazabilidad + controles</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Enrutamiento de pedidos al POS correcto</div>
+                <div class="cmCell" role="cell"><span class="sig sig--bad">✖</span> Asignación manual/ambigua</div>
+                <div class="cmCell" role="cell"><span class="sig sig--good">✓</span> Reglas por zona/sede</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Cortes y conciliación</div>
+                <div class="cmCell" role="cell"><span class="sig sig--warn">⚠</span> Inconsistente (comisiones/ajustes)</div>
+                <div class="cmCell" role="cell"><span class="sig sig--good">✓</span> Cierre por canal y sede</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rollout card">
+            <div class="rollout__head">
+              <div>
+                <h3>Despliegue escalonado (por estado y sucursales)</h3>
+                <div class="muted">Arrancar rápido en un estado piloto y replicar el estándar a nuevos estados.</div>
+              </div>
+              <div class="pill">Estrategia de expansión</div>
+            </div>
+
+            <div class="waves" aria-label="Oleadas de despliegue">
+              <div class="wave">
+                <div class="wave__tag">Ola 1</div>
+                <div class="wave__title">Estado piloto</div>
+                <div class="muted">3–8 sucursales</div>
+                <div class="wave__steps">
+                  <div class="waveStep">Configuración por sede (catálogo/zonas)</div>
+                  <div class="waveStep">Inventario + producción por sucursal</div>
+                  <div class="waveStep">KPIs y reportes ejecutivos</div>
+                </div>
+              </div>
+
+              <div class="wave">
+                <div class="wave__tag">Ola 2</div>
+                <div class="wave__title">Mismo estado</div>
+                <div class="muted">+ nuevas sucursales</div>
+                <div class="wave__steps">
+                  <div class="waveStep">Replicar configuración</div>
+                  <div class="waveStep">Capacitación express por rol</div>
+                  <div class="waveStep">Control de merma y rotación</div>
+                </div>
+              </div>
+
+              <div class="wave">
+                <div class="wave__tag">Ola 3</div>
+                <div class="wave__title">Nuevos estados</div>
+                <div class="muted">Veracruz → CDMX → Tabasco</div>
+                <div class="wave__steps">
+                  <div class="waveStep">Alta de sedes y responsables</div>
+                  <div class="waveStep">Integración de plataformas por sede</div>
+                  <div class="waveStep">Conciliación y estandarización</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -271,7 +518,7 @@
           <div class="timeline">
             <div class="step card">
               <div class="step__head">
-                <div class="step__title">Fase 1 (4–6 semanas)</div>
+                <div class="step__title"><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-store" /></svg></span>Fase 1 (4–6 semanas)</div>
                 <div class="pill">Multi-sucursal base</div>
               </div>
               <ul class="bullets">
@@ -284,7 +531,7 @@
 
             <div class="step card">
               <div class="step__head">
-                <div class="step__title">Fase 2 (4–8 semanas)</div>
+                <div class="step__title"><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-box" /></svg></span>Fase 2 (4–8 semanas)</div>
                 <div class="pill">Producción + KPIs</div>
               </div>
               <ul class="bullets">
@@ -297,7 +544,7 @@
 
             <div class="step card">
               <div class="step__head">
-                <div class="step__title">Fase 3 (opcional)</div>
+                <div class="step__title"><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-receipt" /></svg></span>Fase 3 (opcional)</div>
                 <div class="pill">Plataformas + POS + conciliación</div>
               </div>
               <ul class="bullets">
@@ -321,7 +568,7 @@
           <div class="grid-3">
             <article class="card">
               <div class="pill pill--soft">Starter</div>
-              <h3>Multi-sucursal base</h3>
+              <h3><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-store" /></svg></span>Multi-sucursal base</h3>
               <ul class="bullets">
                 <li>Catálogo y usuarios/roles.</li>
                 <li>Alta de sucursales/franquicias (inventario y operación por sede).</li>
@@ -333,7 +580,7 @@
 
             <article class="card">
               <div class="pill pill--soft">Pro</div>
-              <h3>Producción y control por sucursal</h3>
+              <h3><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-box" /></svg></span>Producción y control por sucursal</h3>
               <ul class="bullets">
                 <li>Órdenes de producción y recetas/consumos.</li>
                 <li>Mermas y trazabilidad.</li>
@@ -345,7 +592,7 @@
 
             <article class="card">
               <div class="pill pill--soft">Enterprise</div>
-              <h3>Plataformas + POS + conciliación</h3>
+              <h3><span class="iconInline" aria-hidden="true"><svg class="icon"><use href="#i-link" /></svg></span>Plataformas + POS + conciliación</h3>
               <ul class="bullets">
                 <li>Asociación de pedidos Uber/Didi/Rappi al POS/sucursal.</li>
                 <li>Mapeo de menú por sucursal (SKU/plataforma) y stock.</li>
