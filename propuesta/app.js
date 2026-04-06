@@ -7,19 +7,13 @@ function $all(sel, root = document) {
 }
 
 function setActiveNav() {
-  const sections = [
-    "#resumen",
-    "#alcance",
-    "#modelo-pos",
-    "#fases",
-    "#paquetes",
-    "#entregables",
-    "#requerimientos",
-  ]
+  const links = $all(".nav__link");
+
+  const sections = links
+    .map((a) => a.getAttribute("href"))
+    .filter((href) => href && href.startsWith("#"))
     .map((id) => $(id))
     .filter(Boolean);
-
-  const links = $all(".nav__link");
 
   const observer = new IntersectionObserver(
     (entries) => {

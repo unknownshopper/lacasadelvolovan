@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propuesta Económica | La Casa del Volován</title>
+    <meta
+      name="description"
+      content="Propuesta económica para la implementación del sistema multi-sucursal de La Casa del Volován: costos de implementación, mensualidad, servicios e integraciones." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#b12a26" />
+
+    <link rel="canonical" href="https://unknownshopper.github.io/lacasadelvolovan/propuesta/propeco.html" />
+
+    <link rel="icon" href="../logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../logo.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="La Casa del Volován" />
+    <meta property="og:title" content="Propuesta Económica | La Casa del Volován" />
+    <meta
+      property="og:description"
+      content="Desglose y justificación de costos: implementación, mensualidad, servicios e integraciones para sistema multi-sucursal." />
+    <meta property="og:url" content="https://unknownshopper.github.io/lacasadelvolovan/propuesta/propeco.html" />
+    <meta property="og:image" content="https://unknownshopper.github.io/lacasadelvolovan/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="La Casa del Volován" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Propuesta Económica | La Casa del Volován" />
+    <meta
+      name="twitter:description"
+      content="Desglose de costos de implementación y operación mensual para el sistema multi-sucursal." />
+    <meta name="twitter:image" content="https://unknownshopper.github.io/lacasadelvolovan/logo.png" />
+    <meta name="twitter:image:alt" content="La Casa del Volován" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Propuesta Económica | La Casa del Volován",
+        "url": "https://unknownshopper.github.io/lacasadelvolovan/propuesta/propeco.html",
+        "description": "Propuesta económica: costos de implementación, mensualidad, servicios e integraciones para un sistema multi-sucursal.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "La Casa del Volován",
+          "url": "https://unknownshopper.github.io/lacasadelvolovan/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unknown Shopper",
+          "url": "https://unknownshoppers.com"
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="topbar" role="banner">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <img class="brand__logo" src="../logo.png" alt="La Casa del Volován" />
+          <div class="brand__meta">
+            <div class="brand__title">Propuesta Económica</div>
+            <div class="brand__subtitle">Costos, mensualidad y servicios</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Secciones">
+          <a class="nav__link" href="#resumen">Resumen</a>
+          <a class="nav__link" href="#rutas">Rutas</a>
+          <a class="nav__link" href="#fases">Fases</a>
+          <a class="nav__link" href="#desglose">Desglose</a>
+          <a class="nav__link" href="#justificacion">Justificación</a>
+          <a class="nav__link" href="#opciones">Opcionales</a>
+          <a class="nav__link" href="#supuestos">Supuestos</a>
+        </nav>
+
+        <div class="actions">
+          <a class="btn btn--ghost" href="index.html">Volver a la propuesta</a>
+          <button class="btn" id="btnPrint" type="button">Imprimir</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="resumen">
+        <div class="container hero__grid">
+          <div>
+            <h1>Propuesta económica</h1>
+            <p class="muted">
+              Desglose y justificación de costos para implementar y operar el sistema multi-sucursal de La Casa del Volován
+              (producción por sede, POS y, si aplica, integración de pedidos Uber/Didi/Rappi).
+            </p>
+            <div class="mini card">
+              <div class="mini__label">Versión</div>
+              <div class="mini__value" id="versionTag">v1</div>
+              <div class="divider"></div>
+              <div class="mini__label">Moneda</div>
+              <div class="mini__value">MXN + IVA</div>
+            </div>
+
+            <div class="mini card" style="margin-top:14px">
+              <div class="mini__label">Nota</div>
+              <div class="mini__value">Montos referenciales (para visualizar). Ajustables en la negociación.</div>
+            </div>
+          </div>
+
+          <aside class="card card--hero">
+            <div class="pill pill--soft">Resumen rápido</div>
+            <h2 style="margin-top:10px">Estructura de cobro</h2>
+            <ul class="bullets">
+              <li><strong>Implementación (una sola vez)</strong>: análisis, configuración, despliegue y capacitación.</li>
+              <li><strong>Mensualidad</strong>: hosting, mantenimiento, soporte y mejora continua (según paquete).</li>
+              <li><strong>Servicios opcionales</strong>: integraciones, conciliación por plataforma, automatizaciones, BI.</li>
+            </ul>
+            <div class="divider"></div>
+            <div class="muted">
+              En esta etapa (interés inicial: <strong>Tabasco</strong>), la propuesta prioriza un <strong>arranque por fases</strong>
+              para controlar riesgo, asegurar adopción y dejar un estándar replicable a otros estados.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="rutas" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>2 rutas de implementación (según estrategia de franquicia)</h2>
+            <p>Ambas rutas permiten iniciar en Tabasco y escalar a multi-estado. La diferencia está en quién opera el POS.</p>
+          </header>
+
+          <div class="compare">
+            <article class="card compare__card">
+              <div class="pill pill--soft">Ruta A</div>
+              <h3>POS corporativo (recomendado para control multi-estado)</h3>
+              <div class="muted">Un solo estándar para todas las sedes: operación, inventario, producción, reportes y conciliación.</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Ventaja</strong>: visibilidad y control consolidado por estado/sucursal/canal.</li>
+                <li><strong>Ventaja</strong>: integración de plataformas y conciliación uniforme.</li>
+                <li><strong>Ventaja</strong>: replicación rápida a nuevos estados con configuración estándar.</li>
+              </ul>
+              <div class="outcome">Ideal si: quieren mando central y crecimiento acelerado.</div>
+            </article>
+
+            <article class="card compare__card">
+              <div class="pill pill--soft">Ruta B</div>
+              <h3>POS por franquiciatario (cada sede usa su POS)</h3>
+              <div class="muted">Nos enfocamos en el sistema integral de control/operación y en conectores para consolidar información.</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Ventaja</strong>: adopción rápida si cada franquicia ya tiene procesos/hardware.</li>
+                <li><strong>Reto</strong>: estandarizar datos (catálogo, cierres, comisiones) entre POS distintos.</li>
+                <li><strong>Reto</strong>: integraciones dependen del POS elegido y sus APIs/exports.</li>
+              </ul>
+              <div class="outcome">Ideal si: priorizan flexibilidad por franquicia y consolidación gradual.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="fases" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Implementación por fases (Tabasco primero, multi-estado después)</h2>
+            <p>Modelo incremental para que el costo se alinee a valor real y avance por oleadas.</p>
+          </header>
+
+          <div class="compareMatrix card" aria-label="MVP de arranque">
+            <div class="compareMatrix__head">
+              <div>
+                <h3>Arranque barato (MVP) — enfoque Tabasco</h3>
+                <div class="muted">Fase 1 se plantea como un mínimo viable para operar y medir; fases 2–3 se activan cuando el piloto ya está estable.</div>
+              </div>
+              <div class="pill">Estrategia B</div>
+            </div>
+
+            <div class="compareMatrix__grid" role="table">
+              <div class="cmRow cmRow--head" role="row">
+                <div class="cmCell" role="columnheader">Incluye en Fase 1</div>
+                <div class="cmCell" role="columnheader">No incluye en Fase 1</div>
+                <div class="cmCell" role="columnheader">Por qué</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell" role="cell">Operación por sucursal, usuarios/roles, catálogo base, cortes y reportes esenciales</div>
+                <div class="cmCell" role="cell">Integración Uber/Didi/Rappi, conciliación por plataforma, BI avanzado</div>
+                <div class="cmCell" role="cell">Reduce costo inicial y acelera salida a producción</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell" role="cell">Inventario básico por sucursal (entradas/salidas/ajustes)</div>
+                <div class="cmCell" role="cell">Recetas/consumos detallados y órdenes de producción</div>
+                <div class="cmCell" role="cell">Se habilita en Fase 2 una vez estabilizada la operación</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 1 — Operación base por sede</div>
+                <div class="pill">Arranque</div>
+              </div>
+              <ul class="bullets">
+                <li>Alta de sedes/sucursales, usuarios, roles y permisos.</li>
+                <li>Catálogo, precios y reglas por sede (horarios / zonas).</li>
+                <li>Inventario básico y reportes esenciales por sucursal.</li>
+              </ul>
+              <div class="outcome">Implementación referencial (MVP): <strong>$59,000</strong> + mensualidad base.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 2 — Producción, trazabilidad y KPIs</div>
+                <div class="pill">Control</div>
+              </div>
+              <ul class="bullets">
+                <li>Órdenes de producción por sucursal, recetas/consumos.</li>
+                <li>Mermas, ajustes y trazabilidad por responsable.</li>
+                <li>Dashboard ejecutivo por sede/estado.</li>
+              </ul>
+              <div class="outcome">Implementación incremental referencial: <strong>$79,000</strong>.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Fase 3 — Canales (Uber/Didi/Rappi) + conciliación</div>
+                <div class="pill">Omnicanal</div>
+              </div>
+              <ul class="bullets">
+                <li>Asociación de pedidos al POS/sucursal correcto (sin duplicar captura).</li>
+                <li>Mapeo de menú por sede y control de disponibilidad.</li>
+                <li>Conciliación por plataforma: comisiones, ajustes, cancelaciones.</li>
+              </ul>
+              <div class="outcome">Implementación referencial: <strong>$95,000</strong> + opcionales por plataforma.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="desglose" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Desglose de costos</h2>
+            <p>Transparencia por rubro para una decisión informada.</p>
+          </header>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="pill pill--soft">Una sola vez</div>
+              <h3>Implementación</h3>
+              <div class="muted">Por fases (según ruta A/B) + configuración + capacitación</div>
+              <div class="divider"></div>
+              <div class="mini__label">Estimación</div>
+              <div class="mini__value">$59,000 (F1 MVP) + $79,000 (F2) + $95,000 (F3 opcional)</div>
+              <ul class="bullets" style="margin-top:12px">
+                <li>Levantamiento de requerimientos y mapeo operativo.</li>
+                <li>Configuración multi-sede (catálogo, zonas, roles).</li>
+                <li>Pruebas, despliegue y checklist de arranque.</li>
+                <li>Capacitación por rol (caja, producción, admin).</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Recurrente</div>
+              <h3>Mensualidad</h3>
+              <div class="muted">Operación estable + soporte + mantenimiento</div>
+              <div class="divider"></div>
+              <div class="mini__label">Estimación</div>
+              <div class="mini__value"><strong>$6,900 / mes</strong> base + <strong>$450 / sucursal / mes</strong></div>
+              <ul class="bullets" style="margin-top:12px">
+                <li>Hosting/infraestructura y monitoreo.</li>
+                <li>Soporte (incidencias) y mantenimiento correctivo.</li>
+                <li>Actualizaciones de seguridad y mejoras menores.</li>
+                <li>Backups y continuidad operativa.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">A demanda</div>
+              <h3>Servicios</h3>
+              <div class="muted">Escalamiento, integraciones y optimización</div>
+              <div class="divider"></div>
+              <div class="mini__label">Modalidad</div>
+              <div class="mini__value"><strong>$9,000 / mes</strong> (bolsa sugerida) o por entregable</div>
+              <ul class="bullets" style="margin-top:12px">
+                <li>Nuevas funciones y automatizaciones.</li>
+                <li>Reportes avanzados / BI.</li>
+                <li>Integraciones con terceros (según APIs).</li>
+                <li>Optimización por crecimiento (performance).</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px">
+            <article class="card">
+              <h3>Opcionales con monto (referencial)</h3>
+              <ul class="bullets">
+                <li><strong>Integración por plataforma</strong> (Uber o Didi o Rappi): <strong>$29,000</strong> setup + <strong>$1,900 / mes</strong>.</li>
+                <li><strong>Conciliación por plataforma</strong> (reglas, comisiones, ajustes): <strong>$19,000</strong> setup + <strong>$1,200 / mes</strong>.</li>
+                <li><strong>BI / reportes avanzados</strong>: <strong>$22,000</strong> setup + <strong>$2,400 / mes</strong>.</li>
+                <li><strong>Automatizaciones / alertas</strong> (WhatsApp/email, reglas): <strong>$15,000</strong> setup + consumo de tercero (si aplica).</li>
+              </ul>
+              <div class="outcome">Estos montos se ajustan por número de sedes, canales y complejidad.</div>
+            </article>
+
+            <article class="card">
+              <h3>Ejemplo (para visualizar) — Tabasco, 3 sucursales</h3>
+              <div class="muted">Escenario sugerido para mostrar capacidad integral con arranque controlado.</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Implementación Fase 1 (MVP)</strong>: $59,000</li>
+                <li><strong>Mensualidad</strong>: $6,900 + (3 × $450) = <strong>$8,250 / mes</strong></li>
+                <li><strong>Fase 2 (cuando el piloto esté estable)</strong>: +$79,000</li>
+                <li><strong>Fase 3 (plataformas)</strong>: +$95,000 + integraciones por plataforma</li>
+              </ul>
+              <div class="outcome">Puedes cambiar “5 sucursales” por el número real y recalculamos.</div>
+            </article>
+          </div>
+
+          <div class="compareMatrix card" aria-label="Fórmula de estimación">
+            <div class="compareMatrix__head">
+              <div>
+                <h3>Cómo estimamos (fórmula simple)</h3>
+                <div class="muted">Te permite presentar capacidad integral sin inventar números exactos.</div>
+              </div>
+              <div class="pill">Escalable</div>
+            </div>
+
+            <div class="compareMatrix__grid" role="table">
+              <div class="cmRow cmRow--head" role="row">
+                <div class="cmCell" role="columnheader">Variable</div>
+                <div class="cmCell" role="columnheader">Impacta en</div>
+                <div class="cmCell" role="columnheader">Por qué</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell"># Sucursales (Tabasco / Ola 1)</div>
+                <div class="cmCell" role="cell">Implementación + mensualidad</div>
+                <div class="cmCell" role="cell">Configuración por sede, usuarios y soporte</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell"># Canales (mostrador + plataformas)</div>
+                <div class="cmCell" role="cell">Implementación (Fase 3) + servicios</div>
+                <div class="cmCell" role="cell">Mapeo de menú, enrutamiento y conciliación</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Ruta A vs Ruta B (POS corporativo vs por franquicia)</div>
+                <div class="cmCell" role="cell">Implementación (complejidad)</div>
+                <div class="cmCell" role="cell">Estandarización e integración de datos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta card" style="margin-top:14px">
+            <div>
+              <div class="pill">Recomendación</div>
+              <div class="cta__title">Arranque por estado piloto + estándar replicable</div>
+              <div class="muted">
+                Para controlar el riesgo y acelerar ROI: arrancar con un estado (3–8 sucursales) y replicar a nuevos estados
+                con configuración y capacitación express.
+              </div>
+            </div>
+            <div class="cta__actions">
+              <button class="btn" id="btnPrint2" type="button">Imprimir</button>
+              <a class="btn btn--ghost" href="index.html#modelo-pos">Ver modelo POS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="justificacion" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Justificación de costos (por qué cuestan)</h2>
+            <p>La estructura refleja la complejidad real de operar multi-sucursal, multi-estado y multi-canal.</p>
+          </header>
+
+          <div class="compareMatrix card" aria-label="Metodología de estimación">
+            <div class="compareMatrix__head">
+              <div>
+                <h3>Metodología (cómo se construyen los montos)</h3>
+                <div class="muted">Los precios referenciales se basan en esfuerzo (horas) + complejidad (sucursales/canales) + nivel de soporte.</div>
+              </div>
+              <div class="pill">Transparente</div>
+            </div>
+
+            <div class="compareMatrix__grid" role="table">
+              <div class="cmRow cmRow--head" role="row">
+                <div class="cmCell" role="columnheader">Driver</div>
+                <div class="cmCell" role="columnheader">Qué incluye</div>
+                <div class="cmCell" role="columnheader">Cómo afecta el precio</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Alcance funcional</div>
+                <div class="cmCell" role="cell">Fases 1–3 (operación, producción/KPIs, plataformas/conciliación)</div>
+                <div class="cmCell" role="cell">A mayor fase y automatización, mayor esfuerzo de análisis, pruebas y despliegue</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell"># Sucursales / sedes</div>
+                <div class="cmCell" role="cell">Configuración por sede, usuarios/roles, capacitación y soporte</div>
+                <div class="cmCell" role="cell">Impacta implementación (setup) y mensualidad (operación/soporte)</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Canales (mostrador + Uber/Didi/Rappi)</div>
+                <div class="cmCell" role="cell">Mapeo de menú, disponibilidad, enrutamiento, conciliación</div>
+                <div class="cmCell" role="cell">Las integraciones y conciliación son de los componentes más costosos</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">SLA de soporte</div>
+                <div class="cmCell" role="cell">Tiempo de respuesta, cobertura y canal (WhatsApp/email, etc.)</div>
+                <div class="cmCell" role="cell">Soporte más rápido = mayor costo mensual (guardias y capacidad)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="compareMatrix card" aria-label="Tabulador de esfuerzo">
+            <div class="compareMatrix__head">
+              <div>
+                <h3>Tabulador de esfuerzo (editable)</h3>
+                <div class="muted">Puedes ajustar horas o tarifas y recalcular. Sirve para justificar con base en esfuerzo real.</div>
+              </div>
+              <div class="pill">Referencia</div>
+            </div>
+
+            <div class="compareMatrix__grid" role="table">
+              <div class="cmRow cmRow--head" role="row">
+                <div class="cmCell" role="columnheader">Rol</div>
+                <div class="cmCell" role="columnheader">Horas (Fase 1)</div>
+                <div class="cmCell" role="columnheader">Tarifa referencial</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Discovery / PM</div>
+                <div class="cmCell" role="cell">40–60 h</div>
+                <div class="cmCell" role="cell">$900–$1,500 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">UX / Flujos operativos</div>
+                <div class="cmCell" role="cell">25–45 h</div>
+                <div class="cmCell" role="cell">$800–$1,200 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Backend / Integración</div>
+                <div class="cmCell" role="cell">70–110 h</div>
+                <div class="cmCell" role="cell">$1,000–$1,800 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Frontend / UI</div>
+                <div class="cmCell" role="cell">45–75 h</div>
+                <div class="cmCell" role="cell">$800–$1,400 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">QA / Pruebas</div>
+                <div class="cmCell" role="cell">35–55 h</div>
+                <div class="cmCell" role="cell">$650–$1,050 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">DevOps / Deploy / Monitoreo</div>
+                <div class="cmCell" role="cell">18–30 h</div>
+                <div class="cmCell" role="cell">$900–$1,600 / h</div>
+              </div>
+
+              <div class="cmRow" role="row">
+                <div class="cmCell cmCell--k" role="cell">Capacitación + acompañamiento</div>
+                <div class="cmCell" role="cell">16–24 h</div>
+                <div class="cmCell" role="cell">$700–$1,200 / h</div>
+              </div>
+            </div>
+
+            <div class="outcome">
+              Nota: el rango de Fase 1 típicamente se explica como <strong>250–400 horas</strong> de esfuerzo total entre roles,
+              más contingencia de puesta en marcha y soporte inicial.
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>Implementación: trabajo “una vez” que habilita la operación</h3>
+              <ul class="bullets">
+                <li><strong>Diseño operativo</strong>: reglas por sede (producción/inventario) y roles.</li>
+                <li><strong>Configuración</strong>: catálogo, precios, permisos, sucursales y zonas.</li>
+                <li><strong>Calidad</strong>: pruebas de flujos críticos (venta, merma, cierre).</li>
+                <li><strong>Adopción</strong>: capacitación y materiales por rol.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Mensualidad: mantenerlo vivo, seguro y confiable</h3>
+              <ul class="bullets">
+                <li><strong>Infraestructura</strong>: hosting, disponibilidad, backups y monitoreo.</li>
+                <li><strong>Soporte</strong>: incidencias, dudas y acompañamiento.</li>
+                <li><strong>Mantenimiento</strong>: correcciones, mejoras menores y seguridad.</li>
+                <li><strong>Escalabilidad</strong>: ajustes para crecimiento por sucursal/estado.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px">
+            <article class="card">
+              <h3>Integraciones: dependen de APIs/menús/conciliación</h3>
+              <ul class="bullets">
+                <li><strong>Plataformas</strong>: mapeo de productos y disponibilidad por sede.</li>
+                <li><strong>Enrutamiento</strong>: asignación por zona, sucursal o reglas.</li>
+                <li><strong>Conciliación</strong>: comisiones, ajustes, cancelaciones por plataforma.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Servicios: convierten datos en decisiones</h3>
+              <ul class="bullets">
+                <li><strong>KPIs ejecutivos</strong>: ventas por canal/estado, rotación, merma.</li>
+                <li><strong>Automatizaciones</strong>: alertas, reportes, control por responsables.</li>
+                <li><strong>Optimización</strong>: mejoras continuas según uso real.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="opciones" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Opcionales (según necesidad)</h2>
+            <p>Elementos que elevan la operación, pero no son obligatorios para arrancar.</p>
+          </header>
+
+          <div class="timeline">
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Integración de plataformas (Uber/Didi/Rappi)</div>
+                <div class="pill">Opcional</div>
+              </div>
+              <ul class="bullets">
+                <li>Unificación de pedidos + asociación al POS/sucursal.</li>
+                <li>Mapeo de menú por sede y control de disponibilidad.</li>
+                <li>Conciliación por plataforma.</li>
+              </ul>
+              <div class="outcome">Costo: por alcance + número de sedes/plataformas.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">BI / reportes avanzados</div>
+                <div class="pill">Opcional</div>
+              </div>
+              <ul class="bullets">
+                <li>Dashboards por estado/sucursal/canal.</li>
+                <li>Alertas por stock mínimo/merma/tiempos.</li>
+                <li>Exportables y reportes programados.</li>
+              </ul>
+              <div class="outcome">Costo: bolsa mensual de servicios.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">Automatizaciones y notificaciones</div>
+                <div class="pill">Opcional</div>
+              </div>
+              <ul class="bullets">
+                <li>WhatsApp/email: alertas y confirmaciones.</li>
+                <li>Reglas por sucursal y horarios.</li>
+                <li>Flujos internos (aprobaciones, cortes).</li>
+              </ul>
+              <div class="outcome">Costo: por paquete o por desarrollo.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="supuestos" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Supuestos, incluye / no incluye</h2>
+            <p>Para evitar sorpresas y mantener el alcance controlado.</p>
+          </header>
+
+          <div class="grid-2">
+            <article class="card">
+              <h3>Supuestos de estimación</h3>
+              <ul class="bullets">
+                <li>Número de sedes/sucursales a implementar en la Ola 1: <strong>__</strong></li>
+                <li>Canales incluidos (mostrador + plataformas): <strong>__</strong></li>
+                <li>Roles por sucursal (caja/producción/admin): <strong>__</strong></li>
+                <li>Catálogo inicial (SKUs aproximados): <strong>__</strong></li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Incluye / No incluye</h3>
+              <ul class="bullets">
+                <li><strong>Incluye</strong>: configuración, capacitación, soporte según paquete.</li>
+                <li><strong>No incluye</strong>: comisiones de plataformas, hardware POS, costos de terceros (PAC, WhatsApp, etc.).</li>
+                <li><strong>APIs</strong>: integraciones sujetas a disponibilidad/condiciones de proveedores.</li>
+                <li><strong>Facturación</strong>: depende de proveedor (PAC) y del flujo actual.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+          <div>
+            <div class="footer__brand">La Casa del Volován</div>
+            <div class="muted">Propuesta económica (MXN + IVA)</div>
+          </div>
+
+          <div class="footer__by">
+            <div class="footer__byLabel">Presentado por</div>
+            <div class="footer__byRow">
+              <img class="footer__byLogo" src="../tuslogo.png" alt="The Unknown Shopper" />
+              <div>
+                <div class="footer__byName">The Unknown Shopper</div>
+                <a class="footer__byLink" href="https://unknownshoppers.com" target="_blank" rel="noopener noreferrer">unknownshoppers.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

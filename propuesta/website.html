@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propuesta de Sitio Web | La Casa del Volován</title>
+    <meta
+      name="description"
+      content="Propuesta de nuevo sitio web para La Casa del Volován: sucursales por estado, menú de productos, pedidos por canal y alineación con un sistema POS multi-sucursal." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#b12a26" />
+
+    <link rel="canonical" href="https://unknownshopper.github.io/lacasadelvolovan/propuesta/website.html" />
+
+    <link rel="icon" href="../logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../logo.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="La Casa del Volován" />
+    <meta property="og:title" content="Propuesta de Sitio Web | La Casa del Volován" />
+    <meta
+      property="og:description"
+      content="Nuevo sitio web: menú, sucursales por estado y pedidos por canal, alineado a un sistema POS multi-sucursal." />
+    <meta property="og:url" content="https://unknownshopper.github.io/lacasadelvolovan/propuesta/website.html" />
+    <meta property="og:image" content="https://unknownshopper.github.io/lacasadelvolovan/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="La Casa del Volován" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Propuesta de Sitio Web | La Casa del Volován" />
+    <meta
+      name="twitter:description"
+      content="Nuevo sitio web con menú y sucursales, conectado al modelo POS propuesto." />
+    <meta name="twitter:image" content="https://unknownshopper.github.io/lacasadelvolovan/logo.png" />
+    <meta name="twitter:image:alt" content="La Casa del Volován" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Propuesta de Sitio Web | La Casa del Volován",
+        "url": "https://unknownshopper.github.io/lacasadelvolovan/propuesta/website.html",
+        "description": "Propuesta de sitio web con menú, sucursales y pedidos por canal, alineado a un sistema POS multi-sucursal.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "La Casa del Volován",
+          "url": "https://unknownshopper.github.io/lacasadelvolovan/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Unknown Shopper",
+          "url": "https://unknownshoppers.com"
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="topbar" role="banner">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <img class="brand__logo" src="../logo.png" alt="La Casa del Volován" />
+          <div class="brand__meta">
+            <div class="brand__title">Propuesta de Sitio Web</div>
+            <div class="brand__subtitle">Menú, sucursales y pedidos por canal</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Secciones">
+          <a class="nav__link" href="#diagnostico">Diagnóstico</a>
+          <a class="nav__link" href="#sitemap">Estructura</a>
+          <a class="nav__link" href="#menu">Menú</a>
+          <a class="nav__link" href="#sucursales">Sucursales</a>
+          <a class="nav__link" href="#integracion">Conexión al sistema</a>
+        </nav>
+
+        <div class="actions">
+          <a class="btn btn--ghost" href="index.html">Ver propuesta del sistema</a>
+          <a class="btn btn--ghost" href="propeco.html">Ver propuesta económica</a>
+          <button class="btn" id="btnPrint" type="button">Imprimir</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="diagnostico">
+        <div class="container hero__grid">
+          <div>
+            <h1>Nuevo sitio web (alineado al sistema POS)</h1>
+            <p class="muted">
+              El sitio actual no muestra el componente más importante: <strong>productos y menú</strong>. Además, el contenido clave
+              está fragmentado, lo que afecta SEO, conversión y consistencia. Esta propuesta reordena el sitio para que sea un
+              <strong>front operativo</strong>: menú + sucursales + pedido por canal + base para crecimiento multi-estado.
+            </p>
+
+            <div class="mini card">
+              <div class="mini__label">Objetivo</div>
+              <div class="mini__value">Convertir visitas en pedidos y datos (por sucursal/canal)</div>
+              <div class="divider"></div>
+              <div class="mini__label">Prioridad</div>
+              <div class="mini__value">Tabasco (piloto) + expansión Veracruz/CDMX</div>
+            </div>
+          </div>
+
+          <aside class="card card--hero">
+            <div class="pill pill--soft">Problemas detectados</div>
+            <ul class="bullets" style="margin-top:12px">
+              <li><strong>Home incompleta</strong>: solo lista ciudades, sin direcciones ni menú.</li>
+              <li><strong>Menú ausente</strong>: baja conversión y mal posicionamiento.</li>
+              <li><strong>SEO técnico débil</strong>: sin sitemap/robots; contenido clave cargado por fragmentos.</li>
+              <li><strong>CTAs confusos</strong>: “Pedido/Factura” apuntan al mismo lugar.</li>
+            </ul>
+            <div class="divider"></div>
+            <div class="muted">Solución: sitio modular, contenido renderizado completo, páginas por sucursal y menú indexable.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="sitemap" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Estructura propuesta (sitemap)</h2>
+            <p>Diseñado para crecer por estados/sucursales y conectar con el sistema POS.</p>
+          </header>
+
+          <div class="timeline">
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">1) Home</div>
+                <div class="pill">Conversión</div>
+              </div>
+              <ul class="bullets">
+                <li>Hero con propuesta clara y CTA “Pedir ahora”.</li>
+                <li>Atajos por ciudad/estado (Tabasco, Veracruz, CDMX).</li>
+                <li>Productos destacados (Top sellers).</li>
+              </ul>
+              <div class="outcome">Resultado: visitas → pedido en 1–2 clics.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">2) Menú</div>
+                <div class="pill">SEO</div>
+              </div>
+              <ul class="bullets">
+                <li>Categorías: clásicos, especiales, dulces, bebidas.</li>
+                <li>Precios referenciales y disclaimers por sucursal/canal.</li>
+                <li>Etiquetas: “Clásico”, “Premium”, “Picante”, “Dulce”.</li>
+              </ul>
+              <div class="outcome">Resultado: posicionamiento por producto + claridad de oferta.</div>
+            </div>
+
+            <div class="step card">
+              <div class="step__head">
+                <div class="step__title">3) Sucursales</div>
+                <div class="pill">Operación</div>
+              </div>
+              <ul class="bullets">
+                <li>Directorio con filtros por estado/ciudad.</li>
+                <li>Página por sucursal: dirección, horarios, teléfono, links de pedido.</li>
+                <li>Mapa y botones por canal (Uber/Didi/Rappi/WhatsApp).</li>
+              </ul>
+              <div class="outcome">Resultado: pedido correcto a la sucursal correcta.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Menú (contenido base para el nuevo sitio)</h2>
+            <p>Catálogo inicial con precios referenciales (pueden variar por sucursal y por plataforma).</p>
+          </header>
+
+          <div class="grid-3">
+            <article class="card">
+              <div class="pill pill--soft">Volovanes</div>
+              <h3>Clásicos y especialidades</h3>
+              <div class="muted">Rango referencial: $46–$59 MXN (plataformas). En local puede ser menor.</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>Pastor con queso</li>
+                <li>Hawaiano</li>
+                <li>Pollo</li>
+                <li>Choriqueso</li>
+                <li>Tres quesos con jamón (premium)</li>
+                <li>Atún a la veracruzana / estilo minilla</li>
+                <li>Pierna ahumada</li>
+                <li>Camarón enchilpayado (Veracruz)</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Hojaldras</div>
+              <h3>Formato delgado</h3>
+              <div class="muted">Variantes dulces y agridulces (según sucursal).</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>Versiones similares a volovanes en hojaldra delgada</li>
+                <li>Dulces espolvoreadas con azúcar</li>
+                <li>Agridulces (según receta local)</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Dulces</div>
+              <h3>Rellenos</h3>
+              <div class="muted">Opciones para antojo / postre.</div>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>Nutella</li>
+                <li>Cajeta</li>
+                <li>Chocoqueso</li>
+                <li>Pay de queso</li>
+                <li>Manzana</li>
+                <li>Filadelfia</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px">
+            <article class="card">
+              <div class="pill pill--soft">Bebidas</div>
+              <h3>Complementos</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>Refrescos y jugos (ej. Del Valle Frut Cítricos ~$35 MXN)</li>
+                <li>Café (según sucursal)</li>
+              </ul>
+              <div class="outcome">En el sitio nuevo, cada sucursal puede activar/desactivar bebidas por disponibilidad.</div>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Precios</div>
+              <h3>Referencias (para mostrar al cliente)</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Sencillos</strong>: desde $46.00 MXN (plataformas)</li>
+                <li><strong>Premium/especiales</strong>: alrededor de $59.00 MXN (plataformas)</li>
+                <li><strong>Venta local</strong>: reportes desde $25.00 MXN por pieza (según punto físico)</li>
+              </ul>
+              <div class="outcome">Recomendación: mostrar “desde” y manejar variaciones por canal/sucursal.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sucursales" class="section section--alt">
+        <div class="container">
+          <header class="section__header">
+            <h2>Sucursales (contenido para el directorio)</h2>
+            <p>Esto alimenta la sección “Sucursales” del nuevo sitio y el enrutamiento del sistema.</p>
+          </header>
+
+          <div class="grid-2">
+            <article class="card">
+              <div class="pill pill--soft">Veracruz</div>
+              <h3>Veracruz y Boca del Río</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Centro Histórico</strong>: Gutiérrez Zamora 134, Veracruz</li>
+                <li><strong>Av. 20 de Noviembre</strong>: No. 1150, Col. Centro, Veracruz</li>
+                <li><strong>Boca del Río</strong>: servicio a domicilio (Uber Eats)</li>
+                <li><strong>Patio Tejería</strong>: dentro del centro comercial</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Tabasco</div>
+              <h3>Villahermosa</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Paseo Tabasco</strong>: Av. Paseo Tabasco 1125, frente al Hospital AIR</li>
+                <li><strong>Av. México</strong>: No. 311, Col. del Bosque</li>
+                <li><strong>Calle Eusebio Castillo</strong>: No. 1304, esquina con Hermanos Bastar Zozaya, zona centro</li>
+              </ul>
+              <div class="outcome">Piloto recomendado: Tabasco (3 sucursales) para validar operación y luego replicar.</div>
+            </article>
+          </div>
+
+          <div class="grid-2" style="margin-top:14px">
+            <article class="card">
+              <div class="pill pill--soft">CDMX</div>
+              <h3>Puntos estratégicos</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li><strong>Terminal TAPO</strong>: presencia en puntos de transporte</li>
+                <li><strong>ADO</strong>: presencia en puntos de transporte</li>
+              </ul>
+              <div class="outcome">Se recomienda ficha por punto + reglas de inventario/producción según operación local.</div>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Dato clave</div>
+              <h3>Operación por sede</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>Cada sucursal/franquicia puede tener su propia producción e inventario.</li>
+                <li>El sitio debe reflejar disponibilidad y enlaces por canal por sucursal.</li>
+              </ul>
+              <div class="outcome">Esto evita pedidos mal asignados y mejora la experiencia del cliente.</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="integracion" class="section">
+        <div class="container">
+          <header class="section__header">
+            <h2>Conexión al sistema (sitio → POS → operación)</h2>
+            <p>El sitio nuevo se diseña para integrarse naturalmente con el modelo POS propuesto.</p>
+          </header>
+
+          <div class="compare">
+            <article class="card">
+              <div class="pill pill--soft">Cliente</div>
+              <h3>Un solo flujo de pedido</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>El usuario elige sucursal (por ubicación o estado).</li>
+                <li>Elige canal: mostrador, WhatsApp, Uber/Didi/Rappi (según disponibilidad).</li>
+                <li>El sitio manda el pedido al punto correcto (enlace directo o formulario).</li>
+              </ul>
+              <div class="outcome">Menos fricción = más conversión.</div>
+            </article>
+
+            <article class="card">
+              <div class="pill pill--soft">Operación</div>
+              <h3>Datos por sucursal y canal</h3>
+              <div class="divider"></div>
+              <ul class="bullets">
+                <li>IDs de sucursal en el sitio para asociar pedidos.</li>
+                <li>UTMs por canal para medir performance por plataforma.</li>
+                <li>Base lista para tracking y facturación por canal/sucursal.</li>
+              </ul>
+              <div class="outcome">El sitio deja de ser “folleto” y se vuelve parte del sistema.</div>
+            </article>
+          </div>
+
+          <div class="cta card" style="margin-top:14px">
+            <div>
+              <div class="pill">Siguiente entregable</div>
+              <div class="cta__title">Maqueta del nuevo sitio (UI) + contenido real</div>
+              <div class="muted">En el siguiente paso podemos maquetar Home/Menú/Sucursales con este mismo estilo para presentar al inversor.</div>
+            </div>
+            <div class="cta__actions">
+              <button class="btn" id="btnPrint2" type="button">Imprimir</button>
+              <a class="btn btn--ghost" href="index.html#modelo-pos">Ver funnel POS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+          <div>
+            <div class="footer__brand">La Casa del Volován</div>
+            <div class="muted">Propuesta de sitio web (alineada a sistema integral)</div>
+          </div>
+
+          <div class="footer__by">
+            <div class="footer__byLabel">Presentado por</div>
+            <div class="footer__byRow">
+              <img class="footer__byLogo" src="../tuslogo.png" alt="The Unknown Shopper" />
+              <div>
+                <div class="footer__byName">The Unknown Shopper</div>
+                <a class="footer__byLink" href="https://unknownshoppers.com" target="_blank" rel="noopener noreferrer">unknownshoppers.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
